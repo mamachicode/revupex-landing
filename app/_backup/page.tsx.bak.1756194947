@@ -1,0 +1,70 @@
+'use client';
+const STRIPE_AUTOPILOT = process.env.NEXT_PUBLIC_STRIPE_LINK_AUTOPILOT || "#";
+const LOOM_URL = process.env.NEXT_PUBLIC_LOOM_URL || "#";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-gray-50 flex items-center justify-center p-6 md:p-24">
+      <div className="max-w-4xl mx-auto text-center">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-2 tracking-tight">REVUPEX</h1>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Stop Chasing Reviews.</h2>
+        <p className="text-lg md:text-xl text-gray-700 mb-16 max-w-2xl mx-auto leading-relaxed">
+          Get a steady stream of 5-star Google Reviews. Our automated system politely nudges your customers for you—so you can sit back while your reputation builds itself.
+        </p>
+
+        <div className="bg-white border-2 border-green-500 rounded-2xl p-8 md:p-10 shadow-xl max-w-2xl mx-auto mb-10 transition-all hover:shadow-2xl hover:scale-[1.02]">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Start Now — Autopilot</h3>
+          <p className="text-gray-700 mb-4">Done-for-you review generation. Set it and forget it.</p>
+          <div className="flex justify-center items-baseline gap-2 mb-6">
+            <span className="text-4xl font-bold text-gray-900">CA$75</span>
+            <span className="text-gray-600">/mo</span>
+            <span className="ml-4 text-lg text-gray-500">+ CA$228 setup</span>
+          </div>
+          <a href={STRIPE_AUTOPILOT} target="_blank" rel="noopener noreferrer"
+             className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-xl text-lg transition-colors">
+            Start Now
+          </a>
+          <p className="text-sm text-green-700 font-medium mt-4">✓ 7-day money-back guarantee</p>
+        </div>
+
+        <div className="mb-12">
+          <a href={LOOM_URL}
+             target={LOOM_URL.startsWith('http') ? "_blank" : undefined}
+             rel={LOOM_URL.startsWith('http') ? "noopener noreferrer" : undefined}
+             className="text-green-700 hover:text-green-800 font-semibold text-lg underline underline-offset-4">
+            See How It Works (60-second demo)
+          </a>
+        </div>
+
+        <div className="mb-12">
+          <p className="text-gray-500 text-sm uppercase tracking-wider mb-4">Trusted by businesses</p>
+          <div className="flex justify-center items-center gap-8 md:gap-12 opacity-70">
+            <span className="text-gray-700">Google</span>
+            <span className="text-gray-700">Stripe</span>
+            <span className="text-gray-700">Gmail</span>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-12">
+          <div className="p-4">
+            <h3 className="font-bold text-lg mb-2 text-gray-900">We Import Your Customers</h3>
+            <p className="text-gray-600">Send your list. We clean, tag EN/FR, and handle the rest.</p>
+          </div>
+          <div className="p-4">
+            <h3 className="font-bold text-lg mb-2 text-gray-900">Automated Requests & Reminders</h3>
+            <p className="text-gray-600">Polite, timed messages that steadily increase review volume.</p>
+          </div>
+          <div className="p-4">
+            <h3 className="font-bold text-lg mb-2 text-gray-900">Bilingual Templates Included</h3>
+            <p className="text-gray-600">Professional messaging in both English and French.</p>
+          </div>
+        </div>
+
+        <div className="text-center text-gray-500 text-sm border-t border-gray-200 pt-8 max-w-2xl mx-auto">
+          <p>We invite reviews from all customers and never offer incentives. Cancel anytime via Stripe.</p>
+          <p className="mt-2">7-day money-back guarantee • <a href="mailto:revupex@outlook.com" className="text-green-700 hover:underline">revupex@outlook.com</a></p>
+        </div>
+      </div>
+    </main>
+  );
+}
