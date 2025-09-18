@@ -2,5 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 
-/* custom tokens go here if you need them */
+/* optional custom styles */
 :root { color-scheme: light; }
