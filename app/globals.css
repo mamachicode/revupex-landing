@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* safe defaults */
+:root { --background:#0b0b0d; --foreground:#ffffff; }
+html, body, :root { height:100%; }
