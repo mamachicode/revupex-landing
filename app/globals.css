@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* optional tokens */
+@import "tailwindcss";
+/* optional base tweaks */
 :root { color-scheme: light; }
