@@ -4,7 +4,9 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Revupex",
-  description: "Revupex landing"
+  description: "Revupex landing",
+  metadataBase: new URL("https://revupex.com"),
+  alternates: { canonical: "/" }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
