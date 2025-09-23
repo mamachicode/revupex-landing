@@ -22,7 +22,7 @@ export default function Home() {
             Buy now
           </a>
           <a
-            href="/thank-you"
+            href="/support"
             className="rounded-md border px-5 py-3 font-medium"
           >
             See success page
