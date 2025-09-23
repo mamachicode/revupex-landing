@@ -1,16 +1,22 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Thanks | Revupex",
-  robots: { index: false, follow: false }, // keep thank-you out of Google
+  robots: { index: false, follow: false },
 };
 
-export default function ThankYou({
+type Query = { paid?: string | string[] };
+
+export default async function ThankYou({
   searchParams,
 }: {
-  searchParams?: { paid?: string };
+  searchParams?: Promise<Query>;
 }) {
-  const paid = searchParams?.paid === "1";
+  const sp = (await searchParams) ?? {};
+  const paidVal = Array.isArray(sp.paid) ? sp.paid[0] : sp.paid;
+  const paid = paidVal === "1";
+
   return (
     <main className="min-h-screen grid place-items-center p-8">
       <section className="max-w-xl text-center space-y-5">
