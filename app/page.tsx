@@ -4,7 +4,7 @@ export const metadata = {
 };
 
 export default function Home() {
-  const pay = "https://buy.stripe.com/REPLACE_ME"; // <-- put your Payment Link here
+  const pay = "https://buy.stripe.com/9B67sKeUn8sncDh2I20VO07"; // <-- put your Payment Link here
   return (
     <main className="min-h-screen grid place-items-center p-8">
       <section className="max-w-2xl text-center space-y-6">
