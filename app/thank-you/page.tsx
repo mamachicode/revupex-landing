@@ -28,14 +28,24 @@ export default async function ThankYou({
             ? "We’re setting up your account now. You’ll get an email update within 24 hours."
             : "We’ll be in touch shortly."}
         </p>
+
         <div className="flex justify-center gap-3">
-          <a href="mailto:support@revupex.com" className="rounded-md border px-5 py-3 font-medium">
+          <a
+            href="mailto:support@revupex.com"
+            className="rounded-md border px-5 py-3 font-medium"
+          >
             Email support
           </a>
-          <Link href="/support" className="rounded-md bg-black text-white px-5 py-3 font-medium">
+          <Link
+            href="/support"
+            className="rounded-md bg-black text-white px-5 py-3 font-medium"
+          >
             Help & next steps
           </Link>
-          <Link href="/" className="rounded-md border px-5 py-3 font-medium">
+          <Link
+            href="/"
+            className="rounded-md border px-5 py-3 font-medium"
+          >
             Back to home
           </Link>
         </div>
