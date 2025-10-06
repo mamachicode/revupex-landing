@@ -22,7 +22,7 @@ export default function Home() {
             Buy now
           </a>
           <a
-            href="/support"
+            href="https://buy.stripe.com/7sY5kC9A3cIDcDhgyS0V005" target="_blank" rel="noopener noreferrer"
             className="rounded-md border px-5 py-3 font-medium"
           >
             See success page
