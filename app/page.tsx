@@ -5,8 +5,8 @@ export const metadata = {
 
 export default function Home() {
   // Update these anytime without touching markup
-  const trialLink = "https://buy.stripe.com/7sY5kC9A3cIDcDhgyS0V005";   // 7-day free trial
-  const setupLink = "https://buy.stripe.com/9B67sKeUn8sncDh2I20VO07";   // Done-for-you setup (CA$199)
+  const trialLink = "https://buy.stripe.com/7sY5kC9A3cIDcDhgyS0VO05";   // 7-day free trial
+  const setupLink = "https://buy.stripe.com/7sY5kC9A3cIDcDhgyS0VO05";   // Done-for-you setup (CA$199)
 
   return (
     <main className="min-h-screen grid place-items-center p-8">
