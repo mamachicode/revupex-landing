@@ -4,8 +4,8 @@ export const metadata = {
 };
 
 export default function Home() {
-  const trialLink = "https://buy.stripe.com/7sY5kC9A3cIDcDhgyS0V005"; // 7-day free trial
-  const setupLink = "https://buy.stripe.com/9B67sKeUn8sncDh2I20VO07"; // One-time CA$199 setup
+  const trialLink = "https://buy.stripe.com/7sY5kC9A3cIDcDhgyS0V005";
+  const setupLink = "https://buy.stripe.com/9B67sKeUn8sncDh2I20VO07";
   
   return (
     <main className="min-h-screen grid place-items-center p-8">
